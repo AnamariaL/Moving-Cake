@@ -20,7 +20,7 @@ int hanoi(int n,char a[],char b[],char c[]){
     }
 }
 int main() {
-int n;
+int n;//layers
 char a[6]="silver"; //declare array to silver
 char b[6]="bronze";//declare array to bronze
 char c[6]="golden";//declare array to golden
