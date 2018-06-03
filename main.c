@@ -23,6 +23,6 @@ int main() {
     printf("How many layers of cake  : ");
     scanf("%d",&n);
 //call the function and return the values
-    moveLayer(n,'S','G','B');
+    moveLayer(n,'S','G','B');  //S=silver, G=golden, B=bronze.
     return 0;
 }
