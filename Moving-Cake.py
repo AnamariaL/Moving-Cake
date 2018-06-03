@@ -1,20 +1,19 @@
 #Recursive function
-def TowerOfHanoi(n , source_rod="Silver", dest_rod="Golden", temp_rod="Bronze"):
+def CakeLayers(n , source="Silver", dest="Golden", temp="Bronze"):
 
     if n == 1:
-    #moves final remaining disk from source to dest
-        print ("Move disk 1 from rod",source_rod,"to rod",dest_rod)
+    #moves final remaining layer from source to dest
+        print ("Move disk 1 from rod",source,"to rod",dest)
         return 
         
-    #moves disks from source to temp using dest
-    TowerOfHanoi(n-1, source_rod, temp_rod, dest_rod)
+    #moves layer from source to temp using dest
+    CakeLayers(n-1, source, temp, dest)
     
-    #moves disk from source to dest directly
-    print ("Move disk",n,"from rod",source_rod,"to rod",dest_rod)
+    #moves layer from source to dest directly
+    print ("Move disk",n,"from rod",source,"to rod",dest)
     
-    #moves disks from temp to dest using source
-    TowerOfHanoi(n-1, temp_rod, dest_rod, source_rod)
-
-        
+    #moves layer from temp to dest using source
+    CakeLayers(n-1, temp, dest, source)
+   
 #Main Call
-TowerOfHanoi (int(input('Enter the no of disks:\n')))
+CakeLayers (int(input('Enter the no of stories:\n')))
