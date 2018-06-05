@@ -10,7 +10,7 @@ def CakeLayers(n , source="Silver", dest="Golden", temp="Bronze"):
     CakeLayers(n-1, source, temp, dest)
     
     #moves layer from source to dest directly
-    print ("Move layer",n,"from rod",source,"to rod",dest)
+    print ("Move layer",n,"from plate",source,"to plate",dest)
     
     #moves layer from temp to dest using source
     CakeLayers(n-1, temp, dest, source)
