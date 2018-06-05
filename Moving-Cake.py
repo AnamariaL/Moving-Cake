@@ -3,7 +3,7 @@ def CakeLayers(n , source="Silver", dest="Golden", temp="Bronze"):
 
     if n == 1:
     #moves final remaining layer from source to dest
-        print ("Move layer 1 from rod",source,"to rod",dest)
+        print ("Move layer 1 from plate",source,"to plate",dest)
         return 
         
     #moves layer from source to temp using dest
